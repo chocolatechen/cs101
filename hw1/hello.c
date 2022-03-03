@@ -2,5 +2,5 @@
 
 int main() {
     printf("hello world");
-    retuen 0;
+    return 0;
 }
