@@ -19,7 +19,7 @@ int main () {
 	}
 	fprintf(fp, " =\n");
 	for (k = 1; k <= num; k++) {
-		fprintf(fp, "[%d]:", k);
+		fprintf(fp, "[%d]: ", k);
 		for (n = 0; n <= 5; n++) {
 			do {
 				a[n] = (rand() % 69) +1;
