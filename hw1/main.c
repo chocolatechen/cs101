@@ -13,7 +13,11 @@ int main () {
 	time_t curtime;
 	time(&curtime);
 	fprintf(fp, "======== lotto649 =========\n");
-	fprintf(fp, "= %s =", ctime(&curtime));
+	fprintf(fp, "= ");
+	for (int g = 0; g <= 23; g++) {
+	    fprintf(fp, "%c", ctime(&curtime)[g]);
+	}
+	fprintf(fp, " =\n");
 	for (k = 1; k <= num; k++) {
 		fprintf(fp, "[%d]:", k);
 		for (n = 0; n <= 5; n++) {
